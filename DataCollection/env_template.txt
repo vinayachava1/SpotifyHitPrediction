@@ -1,0 +1,47 @@
+# Spotify Hit Predictor - Environment Configuration Template
+# 
+# INSTRUCTIONS:
+# 1. Copy this file to .env in the same directory (DataCollection/.env)
+# 2. Fill in your actual Spotify API credentials
+# 3. Get credentials from: https://developer.spotify.com/dashboard/
+#
+# Steps to get Spotify API credentials:
+# 1. Go to https://developer.spotify.com/dashboard/
+# 2. Log in with your Spotify account
+# 3. Click "Create App"
+# 4. Fill in app name: "Spotify Hit Predictor"
+# 5. Fill in description: "ML system to predict song popularity"
+# 6. Copy the Client ID and Client Secret to replace the values below
+
+# REQUIRED: Spotify Web API Credentials
+SPOTIFY_CLIENT_ID=your_spotify_client_id_here
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret_here
+
+# OPTIONAL: Advanced Configuration
+# Uncomment and modify these if you want to customize the system
+
+# Rate limiting (delay between requests in seconds)
+# Lower values = faster collection but higher chance of rate limiting
+# RATE_LIMIT_DELAY=0.1
+
+# Maximum retries for failed API requests
+# MAX_RETRIES=3
+
+# Batch size for processing tracks (don't change unless you know what you're doing)
+# BATCH_SIZE=50
+
+# Market/region for search results (ISO country code)
+# MARKET=US
+
+# Custom playlist IDs for data collection (comma-separated)
+# Add your own playlists here if you want different data sources
+# CUSTOM_PLAYLISTS=37i9dQZEVXbMDoHDwVN2tF,37i9dQZEVXbLiRSasKsNU9
+
+# Output directory for data files (relative to DataCollection folder)
+# DATA_OUTPUT_DIR=data
+
+# Enable debug logging for troubleshooting (true/false)
+# DEBUG_LOGGING=false
+
+# Custom user agent for API requests (optional)
+# USER_AGENT=SpotifyHitPredictor/1.0 
